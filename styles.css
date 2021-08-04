@@ -1,0 +1,129 @@
+/* Colour Scheme 
+    White - #FFFFFF
+    Shadow Blue - #6F8FAF
+    Davys Grey - #4C4C47
+    Gunmetal - #122C34
+    Vivid Burgundy - #990D35 */
+
+/* Containers */
+body {
+    color: #4C4C47;
+    text-align: center;
+}
+
+.btn-primary, .btn-primary:visited {
+    background-color: #ae5040 !important;
+    border-color: #ae5040 !important;
+}
+
+.btn-primary:hover, .btn-primary:active {
+    background-color: #c77a6d !important;
+    border-color: #c77a6d !important;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+li {
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #ae5040;
+}
+
+.nav-item {
+    padding: 0rem 0.25rem;
+}
+
+/* Introduction */
+.intro-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/sunset.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    /* opacity: 0.5; */
+    background-color: white;
+    color: #FFFFFF;
+    padding: 7% 15%;
+    margin-top: 56px;
+}
+
+.intro-title {
+    padding-top: 1.5rem;
+    font-size: 4rem;
+}
+
+.intro-image {
+    border-radius: 50%;
+    height: 25rem;
+    width: 25rem;
+}
+
+/* About Me */
+.about-me-container {
+    padding: 7% 15%;
+}
+
+/* Portfolio */
+.portfolio-container {
+    background-color: #ae5040;
+    color: #FFFFFF;
+    padding: 7% 15%;
+}
+
+/* Experience */
+.experience-container{
+    padding: 7% 15%;
+}
+
+.exp{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.experience-button {
+    margin-top: 2%;
+}
+.experience-title {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding-bottom: 2%;
+}
+
+.exp-title {
+    text-align: left;
+}
+
+.experience-date {
+    text-align: right;
+}
+
+.experience-company {
+    text-align: left;
+}
+
+.experience-details {
+    text-align: left;
+}
+
+/* Contact */
+.contact-container {
+    background-color: #ae5040;
+    color: #FFFFFF;
+    padding: 7% 15%;
+}
+
+a .far, a .fab {
+    color: #FFFFFF;
+}
+
+.contact-row {
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
