@@ -11,9 +11,16 @@ body {
     text-align: center;
 }
 
+a {
+    color: #ae5040;
+}
+
 .btn-primary, .btn-primary:visited {
-    background-color: #ae5040 !important;
-    border-color: #ae5040 !important;
+    /* background-color: #ae5040 !important;
+    border-color: #ae5040 !important; */
+    background-color: #FFFFFF !important;
+    border-color: #FFFFFF !important;
+    color: #ae5040;
 }
 
 .btn-primary:hover, .btn-primary:active {
@@ -68,15 +75,16 @@ li {
     padding: 7% 15%;
 }
 
-/* Portfolio */
-.portfolio-container {
-    background-color: #ae5040;
-    color: #FFFFFF;
+/* Awards */
+.awards-container {
     padding: 7% 15%;
+    text-align: left;
 }
 
 /* Experience */
 .experience-container{
+    background-color: #ae5040;
+    color: #FFFFFF;
     padding: 7% 15%;
 }
 
