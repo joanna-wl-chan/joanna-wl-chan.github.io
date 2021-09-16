@@ -25,3 +25,19 @@ window.onscroll = () => {
     }
   }
 };
+
+// Handle background color changing 
+const allSections = Array.from(document.querySelectorAll("section:not(#navbar)"));
+// Don't want to select the navbar, which is the first element
+allSections.shift();
+
+let white = "#FFFFFF";
+let grey = "#4C4C47";
+let pink = "#ae5040";
+let currentColor = pink;
+
+allSections.forEach(section => {
+  section.style.backgroundColor = currentColor;
+  section.style.color = currentColor === pink ? white : grey;
+  currentColor = currentColor === pink ? white : pink;
+})

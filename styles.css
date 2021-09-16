@@ -1,40 +1,35 @@
-/* Colour Scheme 
-    White - #FFFFFF
-    Shadow Blue - #6F8FAF
-    Davys Grey - #4C4C47
-    Gunmetal - #122C34
-    Vivid Burgundy - #990D35 */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
-/* Containers */
-body {
-    color: #4C4C47;
+h1, h2, h3, h5 {
     text-align: center;
+}
+
+h2 {
+    padding-bottom: 1.5rem;
+}
+
+h4 {
+    text-align: left;
+}
+
+body {
+    text-align: left;
+}
+
+strong {
+    text-decoration: underline;
 }
 
 a {
     color: #ae5040;
 }
 
-.btn-primary, .btn-primary:visited {
-    /* background-color: #ae5040 !important;
-    border-color: #ae5040 !important; */
-    background-color: #FFFFFF !important;
-    border-color: #FFFFFF !important;
-    color: #ae5040;
-}
-
-.btn-primary:hover, .btn-primary:active {
-    background-color: #c77a6d !important;
-    border-color: #c77a6d !important;
-}
-
-a:link, a:visited, a:hover, a:active {
-    text-decoration: none;
-}
-
-li {
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
+section:not(#nav-bar):not(#intro) {
+    padding: 4% 15%;
 }
 
 /* Navigation Bar */
@@ -46,92 +41,74 @@ li {
     padding: 0rem 0.25rem;
 }
 
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+li {
+    padding: 0.5% 0;
+}
+
 /* Introduction */
-.intro-container {
+#intro {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/sunset.jpg');
     background-size: cover;
     background-position: center;
     background-repeat:no-repeat;
-    /* opacity: 0.5; */
-    background-color: white;
-    color: #FFFFFF;
     padding: 7% 15%;
     margin-top: 56px;
 }
 
 .intro-title {
-    padding-top: 1.5rem;
     font-size: 4rem;
+    padding-top: 1.5rem;
 }
 
-.intro-image {
-    border-radius: 50%;
-    height: 25rem;
-    width: 25rem;
-}
-
-/* About Me */
-.about-me-container {
-    padding: 7% 15%;
-}
-
-/* Awards */
-.awards-container {
-    padding: 7% 15%;
+/* Overview */
+.overview-heading {
+    padding-top: 1.5rem;
     text-align: left;
 }
 
-/* Experience */
-.experience-container{
-    background-color: #ae5040;
-    color: #FFFFFF;
-    padding: 7% 15%;
-}
-
-.exp{
-    padding-top: 2.5rem;
+.overview-block {
+    padding-top: 1.5rem;
     padding-bottom: 2.5rem;
 }
 
-.experience-button {
-    margin-top: 2%;
-}
-.experience-title {
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
-    padding-bottom: 2%;
+.overview-company {
+    font-size: 1.2rem;
+    text-decoration: underline;
 }
 
-.exp-title {
-    text-align: left;
-}
-
-.experience-date {
+.overview-date {
     text-align: right;
 }
 
-.experience-company {
+.overview-title {
+    display: flex;
+    justify-content: space-between;
     text-align: left;
 }
 
-.experience-details {
-    text-align: left;
+/* Buttons */
+.btn-primary, .btn-primary:visited {
+    background-color: #FFFFFF !important;
+    border-color: #FFFFFF !important;
+    color: #ae5040;
+}
+
+.btn-primary:hover, .btn-primary:active {
+    background-color: #c77a6d !important;
+    border-color: #c77a6d !important;
 }
 
 /* Contact */
-.contact-container {
-    background-color: #ae5040;
-    color: #FFFFFF;
-    padding: 7% 15%;
-}
-
 a .far, a .fab {
     color: #FFFFFF;
 }
 
 .contact-row {
-    padding-top: 5%;
     display: flex;
     justify-content: space-evenly;
+    padding-top: 1.5rem;
 }
