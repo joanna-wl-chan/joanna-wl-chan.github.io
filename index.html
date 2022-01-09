@@ -5,155 +5,182 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joanna Chan</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">    
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="styles.css" rel="stylesheet">
 
 </head>
 <body>
-
     <!-- Navigation Bar -->
-    <section id="nav-bar">
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link intro active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link about-me" href="#about-me">About Me</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link overview" href="#overview">Overview</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link awards" href="#awards">Awards</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link contact" href="#contact">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-    </section>
+    <nav id="nav-bar" class="navbar navbar-expand-md fixed-top navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul id="nav-list" class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">intro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#overview">overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#awards">awards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-    <!-- Introductory Box --> 
+    <!-- Intro --> 
     <section id="intro">
-      <h3><em>Hey there, I'm</em></h3>
-      <h1 class="intro-title">JOANNA CHAN</h1>
+      <div id="intro-container" class="main">
+        <div id="intro-left">
+          <p id="welcome" class="intro-paragraph">hi there, i'm</p>
+          <h1 id="intro-name">JOANNA CHAN</h1>
+          <p id="tagline">frontend software engineer based in sydney, australia</p>
+          <a href="JOANNA_CHAN_RESUME.pdf" target="_blank">
+            <button id="resume-btn" class="main-btn" type="button">resume</button>
+          </a>
+        </div>
+        <div id="intro-right" class="intro-paragraph">
+          <img id="memoji" src="img/memoji.png" />
+        </div>
+      </div>
     </section>
 
-    <!-- About Me -->
-    <section id="about-me">
-      <h2>ABOUT ME</h2>
-      <p>
-        I'm a frontend software developer currently based in Sydney, Australia. I've got experience with web technologies including HTML, CSS, Javascript and React, 
-        and am passionate in creating exciting and functional web applications that are easily accessible by all and improve the user experience. Please feel free 
-        to get in contact via email or LinkedIn if you're interested in having a chat!
-      </p>
-    </section>
+    <div id="intro-next" class="divider arrow-down"></div>
 
     <!-- Overview -->
-    <section id="overview">
-      <h2>OVERVIEW</h2>
-      <a href="JOANNA_CHAN_RESUME.pdf" target="_blank">
-        <div class="d-grid col-md-6 mx-auto overview-button">
-          <button class="btn btn-primary" type="button">Click to download my full resume.</button>
-        </div>
-      </a>
-      <h3 class="overview-heading">EXPERIENCE</h3>
-      <div class="overview-block">
-        <div class="overview-title">
-          <h4>Group Technology Graduate - Westpac Banking Corporation</h4>
-          <p class="overview-date">FEB 2020 - PRESENT</p>
-        </div>
-        <div class="overview-details">
-          <ul>
-            <li>
-              Rotation 1 (FEB 2020 - AUG 2020) - <strong>Commercial manager </strong>responsible for software licensing for different parts of the bank.
-            </li>
-            <li>
-              Rotation 2 (AUG 2020 - FEB 2021) - <strong>Mobile application developer</strong> involved with creating iOS and Android components to be consumed in the new 
-              customer Westpac mobile application. Also created a new Kotlin application that allowed developers and designers to visualise
-              and interact with components on a mobile device during the building and testing phase. 
-            </li>
-            <li>
-              Rotation 3 (FEB 2021 - PRESENT) - <strong>Frontend software engineer</strong> maintaining and uplifting the React UI components library used across internal 
-              enterprise applications. Corresponding Jest unit tests and e2e snapshots are updated simultaneously with the component uplift, and 
-              builds are run on CI/CD Bamboo pipelines to test the cross-browser and cross-device compatibility. 
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="overview-block">
-        <div class="overview-title">
-          <h4>Software Engineering Intern - Deloitte Digital</h4>
-          <p class="overview-date">JAN 2019 - FEB 2019</p>
-        </div>
-        <div class="overview-details">
-          <ul>
-            <li>
-              Created a portal interfact using HTML, SASS and React.
-            </li>
-            <li>
-              Completed bug-fixes for a neobank's near-release iOS application. 
-            </li>
-          </ul>
-        </div>
-      </div>
-      <hr>
-      <h3 class="overview-heading">EDUCATION</h3>
-      <div class="overview-block">
-        <div class="overview-title">
-          <h4>Bachelor's Degree in Computer Science and Commerce (Finance) - UNSW</h4>
-          <p class="overview-date">2016 - 2019</p>
-        </div>
-        <div class="overview-details">
-          <ul>
-            <li>
-              Graduated with a distinction average.
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Awards -->
-    <section id="awards">
-      <h2>AWARDS</h2>
-      <ul>
-        <li>Accenture Blockchain Hackathon - 2nd Place Recipient (2019)</li>
-        <li>The University of Newcastle New Futures Hackathon for Disaster Resilience - 2nd Place Recipient (2019)</li>
-        <ul>
-          <li><a href="https://devpost.com/software/new-futures-hackathon">View our idea</a></li>
-        </ul>
+    <section id="overview" class="main">
+      <h2>overview</h2>
+      <ul class="fa-ul list">
+        <li class="list-item"><span class="fa-li list-icon"><i class="fas fa-laptop-code"></i></span>experience in web technologies including <b>HTML, CSS, Javascript and React</b></li>
+        <li class="list-item"><span class="fa-li list-icon"><i class="fas fa-pencil-alt"></i></span>interested in <b>user experience design</b>, creating web apps that are functional and accessible</li>
+        <li class="list-item"><span class="fa-li list-icon"><i class="fas fa-user-graduate"></i></span>graduated from UNSW with a bachelor’s degree in <b>computer science and commerce (finance)</b></li>
       </ul>
     </section>
 
+    <div id="overview-next" class="divider arrow-down"></div>
+
+    <!-- Experience -->
+    <section id="experience" class="main">
+      <h2>experience</h2>
+      <ul class="fa-ul list">
+        <li class="list-item"><span class="fa-li list-icon"><i class="fas fa-desktop"></i></span>
+          <div class="experience-title">
+            frontend software engineer @ westpac banking corporation
+          </div>
+          <div class="experience-date">
+            feb 2021 - present
+          </div>
+          <ul class="indented-list experience-desc">
+            <li>responsible for maintaining and uplifting the React UI components library consumed by internal enterprise applications</li>
+            <li>corresponding jest unit tests and e2e snapshot tests are updated alongside the component uplift</li>
+            <li>frequent collaboration with UX and design teams to refine business requirements</li>
+          </ul>
+        </li>
+        <li class="list-item"><span class="fa-li list-icon"><i class="fas fa-mobile-alt"></i></span>
+          <div class="experience-title">
+            mobile application developer (graduate) @ westpac banking corporation
+          </div>
+          <div class="experience-date">
+            aug 2020 - feb 2021
+          </div>
+          <ul class="indented-list experience-desc">
+            <li>built iOS and Android components consumed by the new customer-facing Westpac mobile application</li>
+            <li>created a new Kotlin application that allowed developers and designers to visualise and interact with components on a mobile device during the buidling and testing phase</li>
+            <li>developed new pages for a DevOps dashboard to monitor the status of various tasks, alerting developers of any blockers or unexpected incidents</li>
+          </ul>
+        </li>
+        <li class="list-item"><span class="fa-li list-icon"><i class="far fa-file"></i></span>
+          <div class="experience-title">
+            software engineer (intern) @ deloitte digital
+          </div>
+          <div class="experience-date">
+            jan 2019 - feb 2019
+          </div>
+          <ul class="indented-list experience-desc">
+            <li>designed and implemented a portal interface using HTML, SASS and React </li>
+            <li>completed bug-fixes for a neobank’s near-release iOS application</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <div id="experience-next" class="divider arrow-down"></div>
+
+    <!-- Extracurricular and Awards -->
+    <section id="awards" class="main">
+      <h2>extracurricular + awards</h2>
+      <div class="circle-container">
+        <div class="circle-item">
+          <i class="fas fa-trophy circle-icon"></i>
+          <div class="circle-title">
+            Accenture Blockchain Hackathon 2019
+          </div>
+          <div class="circle-desc">
+            2nd Place Winner
+          </div>
+        </div>
+        <div class="circle-item">
+          <i class="fas fa-trophy circle-icon"></i>
+          <div class="circle-title">
+            New Futures Hackathon for Disaster Resilience 2019
+          </div>
+          <div class="circle-desc">
+            2nd Place Winner
+          </div>
+          <button class="main-btn" onclick="window.open('https://devpost.com/software/new-futures-hackathon','_blank');" type="button">see our idea</button>
+        </div>
+        <div class="circle-item">
+          <i class="fas fa-female circle-icon"></i>
+          <div class="circle-title">
+            UNSW Women in Engineering Society 2019
+          </div>
+          <div class="circle-desc">
+            IT Subcommittee Member
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="awards-next" class="divider arrow-down"></div>
+
     <!-- Contact -->
     <section id="contact">
-      <h2>CONTACT ME</h2>
-      <div class="contact-row">
-        <a href="mailto:joanna.wl.chan@gmail.com">
-          <i class="far fa-envelope fa-2x"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/joanna-chan-357739147/">
-          <i class="fab fa-linkedin-in fa-2x"></i>
-        </a>
-        <a href="https://github.com/joanna-wl-chan">
-          <i class="fab fa-github fa-2x"></i>
-        </a>
+      <div class="contact-container">
+        <div class="contact-content">
+          <h2>contact me</h2>
+          <div class="contact-row">
+            <a href="mailto:joanna.wl.chan@gmail.com">
+              <i class="far fa-envelope fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/joanna-chan-357739147/">
+              <i class="fab fa-linkedin-in fa-2x"></i>
+            </a>
+            <a href="https://github.com/joanna-wl-chan">
+              <i class="fab fa-github fa-2x"></i>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

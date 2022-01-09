@@ -1,43 +1,28 @@
-// Handle onClick for navbar links
-$("#nav-bar .navbar-nav a").on("click", function() {
-    $("#nav-bar .navbar-nav").find("a.active").removeClass("active");
-    $(this).addClass("active");
-})
-
-// Handle active navbar scroll
-const sections = $("section");
-const navList = $(".navbar ul li a");
-
-window.onscroll = () => {
-  var current = "";
-
-  for (var i = 0; i < sections.length; i++) {
-    const sectionTop = sections[i].offsetTop;
-    if (pageYOffset >= sectionTop - 56) {
-      current = sections[i].getAttribute("id"); 
-    }
+let navList = document.querySelector("#nav-list");
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 0) {
+    navList.style.boxShadow = `1px 1px 10px #D3D3D3`;
   }
-
-  for (var j = 0; j < navList.length; j++) {
-    $(navList[j]).removeClass("active");
-    if (navList[j].classList.contains(current)) {
-      $(navList[j]).addClass("active");
-    }
+  else {
+    navList.style.boxShadow = `0px 0px`;
   }
-};
+});
 
-// Handle background color changing 
-const allSections = Array.from(document.querySelectorAll("section:not(#navbar)"));
-// Don't want to select the navbar, which is the first element
-allSections.shift();
+const sections = ["intro", "overview", "experience", "awards", "contact"];
+const nextSection = (currSection) => {
+  const index = sections.findIndex(section => section === currSection);
+  console.log(sections[index + 1])
+  document.getElementById(sections[index + 1]).scrollIntoView();
+}
 
-let white = "#FFFFFF";
-let grey = "#4C4C47";
-let pink = "#ae5040";
-let currentColor = pink;
+const introNext = document.querySelector('#intro-next');
+introNext.addEventListener('click', () => nextSection('intro'));
 
-allSections.forEach(section => {
-  section.style.backgroundColor = currentColor;
-  section.style.color = currentColor === pink ? white : grey;
-  currentColor = currentColor === pink ? white : pink;
-})
+const overviewNext = document.querySelector('#overview-next');
+overviewNext.addEventListener('click', () => nextSection('overview'));
+
+const experienceNext = document.querySelector('#experience-next');
+experienceNext.addEventListener('click', () => nextSection('experience'));
+
+const awardsNext = document.querySelector('#awards-next');
+awardsNext.addEventListener('click', () => nextSection('awards'));
